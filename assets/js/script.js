@@ -41,22 +41,26 @@
 
 
 
-// let A = [1, 3, 5];
-// console.log(A.length)
-
-
-
 // Arrays. Task 9
-let arrA = [2, 7, 1, 8, 0, 11, 1, 7, 11, 7];
-let arrB = [11, 7, 1];
+// let arrA = [2, 7, 1, 8, 0, 11, 1, 7, 11, 7];
+// let arrB = [11, 7, 1];
 
-console.log(arrA);
-console.log(arrB);
+// console.log(arrA);
+// console.log(arrB);
 
-for (let i = 0; i < arrB.length; i++) {
-    for (let j = 0; j < arrA.length; j++) {
-        if (arrB[i] == arrA[j]) arrA[j] = 0;
-    }
-}
+// for (let i = 0; i < arrB.length; i++) {
+//     for (let j = 0; j < arrA.length; j++) {
+//         if (arrB[i] == arrA[j]) arrA[j] = 0;
+//     }
+// }
 
-console.log(arrA);
+// console.log(arrA);
+
+// Arrays. Task 10
+let Arr = [3, 1, 102, 50, 35, 8, 7, 12, 65, 5, 10];
+
+console.warn(Arr);
+Arr.sort((a, b) => a - b);
+console.warn(Arr);
+Arr.reverse();
+console.warn(Arr);
