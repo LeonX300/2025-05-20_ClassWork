@@ -45,6 +45,7 @@
 // let arrA = [2, 7, 1, 8, 0, 11, 1, 7, 11, 7];
 // let arrB = [11, 7, 1];
 
+
 // console.log(arrA);
 // console.log(arrB);
 
@@ -64,4 +65,3 @@ Arr.sort((a, b) => a - b);
 console.warn(Arr);
 Arr.reverse();
 console.warn(Arr);
-
