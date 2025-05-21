@@ -56,12 +56,63 @@
 // }
 
 // console.log(arrA);
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-// Arrays. Task 10
+
+
+// Arrays. Task 10 (sort)
+// let Arr = [3, 1, 102, 50, 35, 8, 7, 12, 65, 5, 10];
+
+// console.warn(Arr);
+// Arr.sort((a, b) => a - b);
+// console.warn(Arr);
+// Arr.reverse();
+// console.warn(Arr);
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// Arrays. Task 10 (without special methods of the Array object)
 let Arr = [3, 1, 102, 50, 35, 8, 7, 12, 65, 5, 10];
 
 console.warn(Arr);
-Arr.sort((a, b) => a - b);
-console.warn(Arr);
-Arr.reverse();
-console.warn(Arr);
+
+let maxElem = Arr[0];
+
+for (let i = 1; i < Arr.length; i++) {
+    //if (Arr[i] == Arr[Arr.length - 1]) break;
+    if (Arr[i] < maxElem) {
+        maxElem = Arr[i];
+    } 
+}
+
+console.warn(maxElem);
+
+
+
+// Arrays. Task 11 (splice)
+// let arrA = [2, 7, 1, 8, 0, 11, 1, 7, 11, 7];
+// let arrB = [11, 7, 1];
+
+// console.log(arrA);
+// console.log(arrB);
+
+// let pos = prompt("Position is required");
+// // arrA.splice(pos, 0, arrB);
+// arrA.splice(pos, 0, ...arrB);
+
+// console.log(arrA);
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+// Arrays. Task 12 (splice)
+// let arrA = [2, 7, 1, 8, 0, 11, 1, 7, 11, 7];
+// const numK = prompt("Start");
+// const numL = prompt("End");
+
+// console.log(arrA);
+
+// arrA.splice(numK, numL);
+
+// console.log(arrA);
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
