@@ -32,10 +32,11 @@
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:green;
     font-family: 'OzCaramel_Regular';
     font-size: 1.7rem;
     text-align: center;
-    color:green
+    max-width: 480px;
 }
 
 .series-elements-number-button {
@@ -49,13 +50,13 @@
     border: none;
     border-radius: 50%;
     background-color: chocolate;
+
+    background-image: url(../svg/recenter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 5px #353535;
     cursor: pointer;
     transition: all .3s linear;
-
-    background-image: url(../svg/recenter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 
 
 }
@@ -67,28 +68,35 @@
 .text-for-us {
     position: relative;
     top: 24%;
-    font-size: 2rem;
-    font-family: 'OzCaramel_Regular';
-    text-align: center;
     color: rgb(94, 56, 112);
+    font-family: 'OzCaramel_Regular';
+    font-size: 2rem;
+    text-align: center;
 }
 
 .series-elements-number-input {
-    border: none;
     display: block;
-    height: 50px;
-    border-radius: 5px;
     position: relative;
     top: 36%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
     outline: none;
     box-shadow: 0 0 10px rgb(196, 195, 195);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 1.2rem;
     color: rgb(82, 82, 82);
     font-family: 'OzCaramel_Regular';
-    width: 150px;
+    font-size: 1.2rem;
     font-weight: 900;
+    text-align: center;
+    transition: all .3s linear;
    
 }
+
+.series-elements-number-input:hover {
+    transform: scale(1.2) translate(-42%, -42%);
+    box-shadow: 0 0 15px rgb(94, 56, 112);;
+}
+

@@ -104,52 +104,59 @@
 
 
 // Task. Homework 2025-05-20
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
-    let num = Number(document.querySelector('.series-elements-number-input').value);
+//     let num = null;
 
-    calculateSeriesSum = num => {
+//     calculateSeriesSum = num => {
 
-        let currentElem = 1;
-        let result = 0;
-        let series = "1 - ";
+//         let currentElem = 1;
+//         let result = 0;
+//         let series = "1 - ";
         
-        for (let i = 2; i <= num; i++) {
-            if (i % 2 == 0) {
-                if (i !== num) {
-                    series += `1 / ${i}  + `
-                } else series += `1 / ${i}`;
+//         for (let i = 2; i <= num; i++) {
+//             if (i % 2 == 0) {
+//                 if (i !== num) {
+//                     series += `1 / ${i}  + `
+//                 } else series += `1 / ${i}`;
         
-                result += currentElem / (i * -1);
+//                 result += currentElem / (i * -1);
         
-            } else {  
-                if (i != num) {
-                    series += `1 / ${i} - `;
-                } else {
-                    series += `1 / ${i}`
-                };
+//             } else {  
+//                 if (i != num) {
+//                     series += `1 / ${i} - `;
+//                 } else {
+//                     series += `1 / ${i}`
+//                 };
                 
-                result += currentElem / i;     
-            }
-        }
+//                 result += currentElem / i;     
+//             }
+//         }
         
-        series += ` ≈ ${result.toFixed(4)}`;
-        return series;
-    };
+//         series += ` ≈ ${result.toFixed(4)}`;
+//         return series;
+//     };
     
-    let mouseClickHandler = () => {
-        console.log(calculateSeriesSum(num))
-    };
+//     let mouseClickHandler = () => {
+//         if (!Number.isFinite(num)) {
+//             document.querySelector('.series').textContent = 'Incorrect input data!';
+//         } else if (num < 1) {
+//             document.querySelector('.series').textContent = 'Incorrect input data!';
+//         } else if (num == 1) {
+//             document.querySelector('.series').textContent = 'Need more than one element. Result is 1!';
+//         } else {
+//             document.querySelector('.series').textContent = (calculateSeriesSum(num));
+//         }
+        
+//     };
 
-    document.querySelector('.series-elements-number-button').addEventListener('click', mouseClickHandler, false);
-    
+//     document.querySelector('.series-elements-number-button').addEventListener('click', () => {
+//         num = Number(document.querySelector('.series-elements-number-input').value);
+//         mouseClickHandler(num);
+//     }, false);
 
-}, false);
-
-
-
-
-
+// }, false)
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
