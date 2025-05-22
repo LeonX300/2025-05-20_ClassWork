@@ -1,15 +1,94 @@
+@font-face {
+    font-family: 'OzCaramel_Regular';
+    src: url(../res/fonts/OzCaramel_Regular.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.circle {
-    width: 300px;
-    height: 300px;
-    color: black;
-    background-color: lightskyblue;
+.container {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(16, 53, 53);
 }
 
-.square {
+.central-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: burlywood;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.series {
+    position: relative;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'OzCaramel_Regular';
+    font-size: 1.7rem;
+    text-align: center;
+    color:green
+}
+
+.series-elements-number-button {
+    display: block;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    background-color: chocolate;
+    box-shadow: 0 0 5px #353535;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    background-image: url(../svg/recenter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.series-elements-number-button:hover {
+    transform: scale(1.2) translate(-42%, -42%);
+}
+
+.text-for-us {
+    position: relative;
+    top: 24%;
+    font-size: 2rem;
+    font-family: 'OzCaramel_Regular';
+    text-align: center;
+    color: rgb(94, 56, 112);
+}
+
+.series-elements-number-input {
+    border: none;
+    display: block;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: 36%;
+    outline: none;
+    box-shadow: 0 0 10px rgb(196, 195, 195);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(82, 82, 82);
+    font-family: 'OzCaramel_Regular';
+    width: 150px;
+    font-weight: 900;
+   
 }
